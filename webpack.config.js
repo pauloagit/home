@@ -55,8 +55,10 @@ module.exports = {
             name: "home",
             filename: "remoteEntry.js",
             remotes: {
-                category: "category@http://localhost:8082/remoteEntry.js",
-                shop: "shop@http://localhost:8083/_next/static/chunks/remoteEntry.js"
+                prehome: "prehome@http://localhost:8081/_next/static/chunks/remoteEntry.js",
+                login: "login@http://localhost:8082/_next/static/chunks/remoteEntry.js",
+                cart: "cart@http://localhost:8083/_next/static/chunks/remoteEntry.js",
+                shop: "shop@http://localhost:8084/_next/static/chunks/remoteEntry.js"
             },
             exposes: {},
             shared: {
