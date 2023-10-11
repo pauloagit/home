@@ -11,18 +11,6 @@ import ProductPage from 'shop/Product'
 
 import "./index.css";
 
-/*<div className="container">
-    <h1 style={{background: 'blue'}}>Home App</h1>
-    <PreHomePage/>
-    <LoginPage/>
-    <ShoppingCartPage/>
-    <div style={{borderStyle: "inset", padding: '5px'}}>
-        <SearchPage/>
-        <CategoryPage/>
-        <ProductPage/>
-    </div>
-
-</div>*/
 const App = () => (
     <>
         <Navbar/>
@@ -31,7 +19,8 @@ const App = () => (
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/pre-home" element={<PreHomePage/>}></Route>
                 <Route path="/login" element={<LoginPage/>}></Route>
-                <Route path="/shopping-cart" element={<ShoppingCartPage/>}></Route>
+                <Route path="/shopping-cart"
+                       element={<div style={{textAlign:"justify"}}><ShoppingCartPage/></div>}></Route>
                 <Route path="/search" element={<SearchPage/>}></Route>
                 <Route path="/category" element={<CategoryPage/>}></Route>
                 <Route path="/product" element={<ProductPage/>}></Route>
